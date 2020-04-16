@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<City xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <id>37549</id>
+  <name>Тбилиси</name>
+  <weatherDatas>
+    <WeatherData>
+      <city>Тбилиси</city>
+      <dateTime>2020-04-16T09:22:58.7442698+03:00</dateTime>
+      <state>Пасмурно</state>
+      <temperature>11</temperature>
+      <wind>Северо-Западный</wind>
+      <windspeed>723</windspeed>
+      <preasure>722</preasure>
+    </WeatherData>
+    <WeatherData>
+      <city>Тбилиси</city>
+      <dateTime>2020-04-16T09:22:58.7453096+03:00</dateTime>
+      <state>Пасмурно</state>
+      <temperature>15</temperature>
+      <wind>Северо-Западный</wind>
+      <windspeed>724.5</windspeed>
+      <preasure>723.5</preasure>
+    </WeatherData>
+  </weatherDatas>
+</City>

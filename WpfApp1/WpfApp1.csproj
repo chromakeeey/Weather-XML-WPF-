@@ -76,6 +76,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Dialog\TakeCity.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -86,6 +90,9 @@
     </Compile>
     <Compile Include="Dialog\AddCity.xaml.cs">
       <DependentUpon>AddCity.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\TakeCity.xaml.cs">
+      <DependentUpon>TakeCity.xaml</DependentUpon>
     </Compile>
     <Compile Include="Header\City.cs" />
     <Compile Include="Header\WeatherData.cs" />

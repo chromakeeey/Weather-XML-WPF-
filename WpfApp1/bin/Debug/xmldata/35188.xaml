@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<City xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <id>35188</id>
+  <name>Нур-Султан (Астана)</name>
+  <weatherDatas>
+    <WeatherData>
+      <city>Нур-Султан (Астана)</city>
+      <dateTime>2020-04-16T11:11:13.0797047+03:00</dateTime>
+      <state>Неопределенно</state>
+      <temperature>11</temperature>
+      <wind>Южный</wind>
+      <windspeed>736</windspeed>
+      <preasure>735</preasure>
+    </WeatherData>
+    <WeatherData>
+      <city>Нур-Султан (Астана)</city>
+      <dateTime>2020-04-16T11:11:13.0797047+03:00</dateTime>
+      <state>Неопределенно</state>
+      <temperature>3</temperature>
+      <wind>Юго-Восточный</wind>
+      <windspeed>735</windspeed>
+      <preasure>734</preasure>
+    </WeatherData>
+  </weatherDatas>
+</City>

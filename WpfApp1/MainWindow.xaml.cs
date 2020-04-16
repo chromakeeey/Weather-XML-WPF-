@@ -14,9 +14,11 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using LiveCharts;
 using LiveCharts.Wpf;
+using LiveCharts.Defaults;
 
 using WpfApp1.Header;
 using WpfApp1.Dialog;
+
 
 namespace WpfApp1
 {
@@ -30,6 +32,39 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        public void setCity(City city)
+        {
+            this.city = city;
+            WeatherData weatherData = city.nowWeatherData();
+
+            lbl_name.Text = city.name;
+            lbl_state.Text = weatherData.state;
+            lbl_temperature.Text = String.Format("{0} ‎℃", weatherData.temperature);
+            lbl_wind.Text = weatherData.wind;
+            lbl_windspeed.Text = String.Format("{0} м/с", weatherData.windspeed);
+            lbl_preasure.Text = String.Format("{0} мм", weatherData.preasure);
+            lbl_averagetmp.Text = city.averageTemperature().ToString();
+
+            StatChart.AxisX[0].MinValue = double.NaN;
+            StatChart.AxisX[0].MaxValue = double.NaN;
+            StatChart.AxisY[0].MinValue = double.NaN;
+            StatChart.AxisY[0].MaxValue = double.NaN;
+
+            StatChart.Series.Clear();
+
+            StatChart.Series = new SeriesCollection()
+            {
+                new LineSeries
+                {
+                    Values = city.valuesGet(),
+                    PointGeometrySize = 15
+                }
+                
+                
+            };
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -48,6 +83,16 @@ namespace WpfApp1
 
             addCity.mainWindow = this;
             addCity.ShowDialog();
+        }
+
+        private void CityChange_Click(object sender, RoutedEventArgs e)
+        {
+            TakeCity takeCity = new TakeCity();
+
+            takeCity.mainWindow = this;
+            takeCity.ShowDialog();
+
+            
         }
     }
 }

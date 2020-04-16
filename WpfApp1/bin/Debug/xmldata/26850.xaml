@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<City xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <id>26850</id>
+  <name>Минск</name>
+  <weatherDatas>
+    <WeatherData>
+      <city>Минск</city>
+      <dateTime>2020-04-15T20:11:33.8459043+03:00</dateTime>
+      <state>Неопределенно</state>
+      <temperature>4.5</temperature>
+      <wind />
+      <windspeed>737</windspeed>
+      <preasure>736</preasure>
+    </WeatherData>
+    <WeatherData>
+      <city>Минск</city>
+      <dateTime>2020-04-15T20:11:34.7529603+03:00</dateTime>
+      <state>Неопределенно</state>
+      <temperature>7</temperature>
+      <wind />
+      <windspeed>732</windspeed>
+      <preasure>731</preasure>
+    </WeatherData>
+    <WeatherData>
+      <city>Минск</city>
+      <dateTime>2020-04-16T09:22:21.6254456+03:00</dateTime>
+      <state>Пасмурно</state>
+      <temperature>5.5</temperature>
+      <wind>Юго-Западный</wind>
+      <windspeed>734.5</windspeed>
+      <preasure>733.5</preasure>
+    </WeatherData>
+  </weatherDatas>
+</City>

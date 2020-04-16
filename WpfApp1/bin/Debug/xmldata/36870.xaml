@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<City xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <id>36870</id>
+  <name>Алматы</name>
+  <weatherDatas>
+    <WeatherData>
+      <city>Алматы</city>
+      <dateTime>2020-04-15T18:29:11.4853231+03:00</dateTime>
+      <state>Неопределенно</state>
+      <temperature>5</temperature>
+      <wind />
+      <windspeed>701.5</windspeed>
+      <preasure>700.5</preasure>
+    </WeatherData>
+    <WeatherData>
+      <city>Алматы</city>
+      <dateTime>2020-04-15T18:29:12.696571+03:00</dateTime>
+      <state>Неопределенно</state>
+      <temperature>6</temperature>
+      <wind />
+      <windspeed>700</windspeed>
+      <preasure>699</preasure>
+    </WeatherData>
+    <WeatherData>
+      <city>Алматы</city>
+      <dateTime>2020-04-15T18:29:12.696571+03:00</dateTime>
+      <state>Неопределенно</state>
+      <temperature>23</temperature>
+      <wind />
+      <windspeed>700</windspeed>
+      <preasure>699</preasure>
+    </WeatherData>
+    <WeatherData>
+      <city>Алматы</city>
+      <dateTime>2020-04-15T18:29:12.696571+03:00</dateTime>
+      <state>Неопределенно</state>
+      <temperature>6</temperature>
+      <wind />
+      <windspeed>700</windspeed>
+      <preasure>699</preasure>
+    </WeatherData>
+    <WeatherData>
+      <city>Алматы</city>
+      <dateTime>2020-04-15T18:29:12.696571+03:00</dateTime>
+      <state>Неопределенно</state>
+      <temperature>2</temperature>
+      <wind />
+      <windspeed>700</windspeed>
+      <preasure>699</preasure>
+    </WeatherData>
+    <WeatherData>
+      <city>Алматы</city>
+      <dateTime>2020-04-15T18:29:12.696571+03:00</dateTime>
+      <state>Неопределенно</state>
+      <temperature>-15</temperature>
+      <wind />
+      <windspeed>700</windspeed>
+      <preasure>699</preasure>
+    </WeatherData>
+    <WeatherData>
+      <city>Алматы</city>
+      <dateTime>2020-04-16T09:24:25.3301993+03:00</dateTime>
+      <state>Пасмурно</state>
+      <temperature>5</temperature>
+      <wind>Южный</wind>
+      <windspeed>701</windspeed>
+      <preasure>700</preasure>
+    </WeatherData>
+  </weatherDatas>
+</City>

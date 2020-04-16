@@ -33,3 +33,5 @@ C:\Users\Admin\source\repos\WpfApp1\WpfApp1\bin\Debug\LiveCharts.Wpf.pdb
 C:\Users\Admin\source\repos\WpfApp1\WpfApp1\bin\Debug\LiveCharts.Wpf.xml
 C:\Users\Admin\source\repos\WpfApp1\WpfApp1\obj\Debug\Dialog\AddCity.g.cs
 C:\Users\Admin\source\repos\WpfApp1\WpfApp1\obj\Debug\Dialog\AddCity.baml
+C:\Users\Admin\source\repos\WpfApp1\WpfApp1\obj\Debug\Dialog\TakeCity.g.cs
+C:\Users\Admin\source\repos\WpfApp1\WpfApp1\obj\Debug\Dialog\TakeCity.baml

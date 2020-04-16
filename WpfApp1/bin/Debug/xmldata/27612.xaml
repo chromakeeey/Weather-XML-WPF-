@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<City xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <id>27612</id>
+  <name>Москва</name>
+  <weatherDatas>
+    <WeatherData>
+      <city>Москва</city>
+      <dateTime>2020-04-15T20:12:18.8594965+03:00</dateTime>
+      <state>Неопределенно</state>
+      <temperature>1.5</temperature>
+      <wind />
+      <windspeed>735.5</windspeed>
+      <preasure>734.5</preasure>
+    </WeatherData>
+    <WeatherData>
+      <city>Москва</city>
+      <dateTime>2020-04-15T20:12:19.8519277+03:00</dateTime>
+      <state>Неопределенно</state>
+      <temperature>3</temperature>
+      <wind />
+      <windspeed>732.5</windspeed>
+      <preasure>731.5</preasure>
+    </WeatherData>
+    <WeatherData>
+      <city>Москва</city>
+      <dateTime>2020-04-16T11:10:38.8515341+03:00</dateTime>
+      <state>Пасмурно</state>
+      <temperature>4.5</temperature>
+      <wind>Южный</wind>
+      <windspeed>728.5</windspeed>
+      <preasure>727.5</preasure>
+    </WeatherData>
+  </weatherDatas>
+</City>

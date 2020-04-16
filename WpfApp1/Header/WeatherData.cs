@@ -5,13 +5,17 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Media.Imaging;
 using System.Xml;
+
 
 namespace WpfApp1.Header
 {
     public class WeatherData
     {
         public string city;
+        public DateTime dateTime;
 
         public string state;
         public float temperature;
@@ -31,42 +35,82 @@ namespace WpfApp1.Header
         public static WeatherData parseGismeteo(string value)
         {
             WeatherData weatherData = new WeatherData();
-            MessageBox.Show(value);
 
-            string pattern = @"температура \d..\d";
-            string edit_value;
+            string pattern = @"\D+";
+            string[] numbers = Regex.Split(value, pattern);
 
-            Regex regex = new Regex(pattern);
-            MatchCollection matchedAuthors = regex.Matches(value);
+            weatherData.temperature = (Convert.ToInt32(numbers[1]) + Convert.ToInt32(numbers[2])) / 2;
+            weatherData.preasure = (Convert.ToInt32(numbers[3]) + Convert.ToInt32(numbers[4])) / 2;
+            weatherData.windspeed = Convert.ToSingle(numbers[4]);
 
-            if (matchedAuthors.Count != 0)
-            {
-                edit_value = matchedAuthors[0].Value;
-                string number = string.Empty;
-                int average = 0;
-
-                for (int i = 0; i < edit_value.Length; i++)
-                {
-                    if (edit_value[i] == '.')
-                    {
-                        if (number.Length != 0)
-                            average += Convert.ToInt32(number);
-
-                        number = string.Empty;
-                    }
-
-                    if (Char.IsDigit(edit_value[i]))
-                        number += edit_value[i];
-                }
-
-                weatherData.temperature = average / 2;
-            }
-
-            MessageBox.Show(weatherData.temperature.ToString());
-
-
+            weatherData.state = parseState(value);
+            weatherData.wind = parseWind(value);
 
             return weatherData;
+        }
+
+        private static string parseState(string value)
+        {
+            string[] word = value.Split(',');
+
+            if (word[0][0] == 'т')
+                return "Неопределенно";
+
+            return word[0];
+        }
+        
+        private static string parseWind(string value)
+        {
+            string pattern = @"ветер \S+";
+            MatchCollection collection = Regex.Matches(value, pattern);
+
+            string field = collection[0].Value;
+            string[] fields = field.Split(' ');
+            fields[1] = fields[1].Remove(fields[1].Length - 1);
+
+            return fields[1];
+        }
+
+        public static string parseGismeteoCity(string value)
+        {
+            string format = string.Empty;
+
+            for (int i = 0; i < value.Length; i++)
+            {
+                if (value[i] == ':')
+                {
+                    format = value.Remove(i); 
+                    break;
+                }
+            }
+
+            return format;
+        }
+
+        public Image weatherImage()
+        {
+            Image image = new Image();
+            BitmapImage bitmap = new BitmapImage();
+
+            bitmap.BeginInit();
+
+            switch (state)
+            {
+                case "Пасмурно": break;
+                case "Малооблачно": break;
+                case "Переменная облачность": break;
+                case "Солнечно": bitmap.UriSource = new Uri("sun.png", UriKind.Relative); break;
+                case "Облачно": break;
+                case "Неопределенно": break;
+                case "Пасмурно, дождь": break;
+
+                default: break;
+            }
+
+            bitmap.EndInit();
+            image.Source = bitmap;
+
+            return image;
         }
     }
 }

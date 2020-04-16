@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<City xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <id>28506</id>
+  <name>Елабуга</name>
+  <weatherDatas>
+    <WeatherData>
+      <city>Елабуга</city>
+      <dateTime>2020-04-15T20:09:03.1097527+03:00</dateTime>
+      <state>Неопределенно</state>
+      <temperature>7</temperature>
+      <wind> </wind>
+      <windspeed>742.5</windspeed>
+      <preasure>741.5</preasure>
+    </WeatherData>
+    <WeatherData>
+      <city>Елабуга</city>
+      <dateTime>2020-04-15T20:09:04.6077254+03:00</dateTime>
+      <state>Неопределенно</state>
+      <temperature>5</temperature>
+      <wind> </wind>
+      <windspeed>744.5</windspeed>
+      <preasure>743.5</preasure>
+    </WeatherData>
+  </weatherDatas>
+</City>

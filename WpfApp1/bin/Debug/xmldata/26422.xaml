@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<City xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <id>26422</id>
+  <name>Рига</name>
+  <weatherDatas>
+    <WeatherData>
+      <city>Рига</city>
+      <dateTime>2020-04-16T11:10:47.1522061+03:00</dateTime>
+      <state>Пасмурно</state>
+      <temperature>6</temperature>
+      <wind>Западный</wind>
+      <windspeed>752.5</windspeed>
+      <preasure>751.5</preasure>
+    </WeatherData>
+    <WeatherData>
+      <city>Рига</city>
+      <dateTime>2020-04-16T11:10:47.1522061+03:00</dateTime>
+      <state>Неопределенно</state>
+      <temperature>3</temperature>
+      <wind>Западный</wind>
+      <windspeed>756</windspeed>
+      <preasure>755</preasure>
+    </WeatherData>
+  </weatherDatas>
+</City>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<City xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <id>38836</id>
+  <name>Душанбе</name>
+  <weatherDatas>
+    <WeatherData>
+      <city>Душанбе</city>
+      <dateTime>2020-04-15T20:33:58.7090948+03:00</dateTime>
+      <state>Пасмурно</state>
+      <temperature>10</temperature>
+      <wind>Северо-Восточный</wind>
+      <windspeed>700</windspeed>
+      <preasure>699</preasure>
+    </WeatherData>
+    <WeatherData>
+      <city>Душанбе</city>
+      <dateTime>2020-04-15T20:33:59.8933874+03:00</dateTime>
+      <state>Неопределенно</state>
+      <temperature>11</temperature>
+      <wind>Юго-Западный</wind>
+      <windspeed>697.5</windspeed>
+      <preasure>696.5</preasure>
+    </WeatherData>
+    <WeatherData>
+      <city>Душанбе</city>
+      <dateTime>2020-04-16T09:18:54.3078953+03:00</dateTime>
+      <state>Облачно</state>
+      <temperature>10</temperature>
+      <wind>Юго-Восточный</wind>
+      <windspeed>699.5</windspeed>
+      <preasure>698.5</preasure>
+    </WeatherData>
+  </weatherDatas>
+</City>

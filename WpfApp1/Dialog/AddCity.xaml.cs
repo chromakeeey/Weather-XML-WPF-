@@ -77,7 +77,17 @@ namespace WpfApp1.Dialog
 
 
             errorTextBox.Visibility = Visibility.Hidden;
-            XamlOperation.readGismeteoXML(id);
+
+            
+            City city = new City();
+
+            city.id = id;
+            city.weatherDatas = XamlOperation.readGismeteoXML(id);
+            city.name = city.weatherDatas[0].city;
+
+            XamlOperation.writeXML(city);
+            MessageBox.Show("Город был успешно добавлен.");
+
         }
     }
 }

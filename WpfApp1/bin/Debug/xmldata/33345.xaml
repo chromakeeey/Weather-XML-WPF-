@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<City xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <id>33345</id>
+  <name>Киев</name>
+  <weatherDatas>
+    <WeatherData>
+      <city>Киев</city>
+      <dateTime>2020-04-15T20:26:43.7570803+03:00</dateTime>
+      <state>Пасмурно</state>
+      <temperature>4.5</temperature>
+      <wind>Западный</wind>
+      <windspeed>746</windspeed>
+      <preasure>745</preasure>
+    </WeatherData>
+    <WeatherData>
+      <city>Киев</city>
+      <dateTime>2020-04-15T20:26:44.9678441+03:00</dateTime>
+      <state>Пасмурно</state>
+      <temperature>7</temperature>
+      <wind>Юго-Западный</wind>
+      <windspeed>743</windspeed>
+      <preasure>742</preasure>
+    </WeatherData>
+    <WeatherData>
+      <city>Киев</city>
+      <dateTime>2020-04-16T11:09:41.77435+03:00</dateTime>
+      <state>Неопределенно</state>
+      <temperature>15.5</temperature>
+      <wind>Юго-Западный</wind>
+      <windspeed>740.5</windspeed>
+      <preasure>739.5</preasure>
+    </WeatherData>
+  </weatherDatas>
+</City>
